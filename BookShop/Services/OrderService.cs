@@ -13,7 +13,7 @@ namespace BookShop.Services
 
         public OrderService(BookShopDbContext context) { _context = context; }
 
-        public async Task<ActionResult<IEnumerable<OrderViewModel>>> GetOrders(int pageNumber, int pageSize)
+        public async Task<IEnumerable<OrderViewModel>> GetOrders(int pageNumber, int pageSize)
         {
             //throw new NotImplementedException();
 
