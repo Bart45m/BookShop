@@ -6,8 +6,8 @@ namespace BookShop.Services
 {
     public interface IBookService
     {
-        Task<ActionResult<IEnumerable<BookViewModel>>> GetBooks();
+        Task<IEnumerable<BookViewModel>> GetBooks();
 
-        Task<ActionResult<BookViewModel>> PostBook(BookViewModel book);
+        Task<BookViewModel> PostBook(BookViewModel book);
     }
 }

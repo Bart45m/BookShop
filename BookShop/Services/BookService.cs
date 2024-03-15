@@ -12,7 +12,7 @@ namespace BookShop.Services
 
         public BookService(BookShopDbContext context) {  _context = context; }
 
-        public async Task<ActionResult<IEnumerable<BookViewModel>>> GetBooks()
+        public async Task<IEnumerable<BookViewModel>> GetBooks()
         {
             if (_context.Books == null)
             {
@@ -25,7 +25,7 @@ namespace BookShop.Services
             return fetchedBooks;
         }
 
-        public async Task<ActionResult<BookViewModel>> PostBook(BookViewModel book)
+        public async Task<BookViewModel> PostBook(BookViewModel book)
         {
             if (_context.Books == null)
             {

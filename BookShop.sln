@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop", "BookShop\BookSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "AuthService\AuthService.csproj", "{E706ABF3-4F26-43DA-BC4C-07A4BB0ABCC9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Test", "BookShop.Test\BookShop.Test.csproj", "{E367B7FD-449F-4FE1-979B-B6EE5E8FEBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Test", "AuthService.Test\AuthService.Test.csproj", "{9FF6B8EE-7CAD-41A1-8678-C6AEB686B61D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{E706ABF3-4F26-43DA-BC4C-07A4BB0ABCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E706ABF3-4F26-43DA-BC4C-07A4BB0ABCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E706ABF3-4F26-43DA-BC4C-07A4BB0ABCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E367B7FD-449F-4FE1-979B-B6EE5E8FEBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E367B7FD-449F-4FE1-979B-B6EE5E8FEBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E367B7FD-449F-4FE1-979B-B6EE5E8FEBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E367B7FD-449F-4FE1-979B-B6EE5E8FEBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF6B8EE-7CAD-41A1-8678-C6AEB686B61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF6B8EE-7CAD-41A1-8678-C6AEB686B61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF6B8EE-7CAD-41A1-8678-C6AEB686B61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF6B8EE-7CAD-41A1-8678-C6AEB686B61D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
