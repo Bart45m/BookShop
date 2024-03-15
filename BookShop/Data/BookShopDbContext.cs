@@ -10,7 +10,7 @@ using BookShop.ViewModels;
 
 namespace BookShop.Data
 {
-    public partial class BookShopDbContext : DbContext
+    public partial class BookShopDbContext : DbContext, IBookShopDbContext
     {
         public virtual DbSet<Book> Books { get; set; } = null!;
 
@@ -18,11 +18,13 @@ namespace BookShop.Data
 
         public virtual DbSet<Order> Orders { get; set; } = null!;
 
-        public virtual DbSet<OrderLine> OrderLine { get; set; } = null!;
+        public virtual DbSet<OrderLine> OrderLines { get; set; } = null!;
 
         public virtual DbSet<User> Users { get; set; } = null!;
 
         //public virtual DbSet<OrderQueryObject> OrderQueryObjects { get; set; } = null !;
+
+        public BookShopDbContext() { }
 
         public BookShopDbContext(DbContextOptions<BookShopDbContext> options)
             : base(options)
