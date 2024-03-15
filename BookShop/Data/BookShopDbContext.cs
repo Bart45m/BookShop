@@ -6,6 +6,7 @@ using BookShop.Models;
 using System.Globalization;
 using System.Reflection.Metadata;
 using System.Text;
+using BookShop.ViewModels;
 
 namespace BookShop.Data
 {
@@ -20,6 +21,8 @@ namespace BookShop.Data
         public virtual DbSet<OrderLine> OrderLine { get; set; } = null!;
 
         public virtual DbSet<User> Users { get; set; } = null!;
+
+        //public virtual DbSet<OrderQueryObject> OrderQueryObjects { get; set; } = null !;
 
         public BookShopDbContext(DbContextOptions<BookShopDbContext> options)
             : base(options)

@@ -37,6 +37,7 @@ builder.Services.AddDbContext<BookShopDbContext>(
 );
 
 builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
